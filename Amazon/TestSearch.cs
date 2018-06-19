@@ -16,8 +16,6 @@ namespace Amazon
         [Order(7)]
         public void Pretraga()
         {
-            //ovo je posebna funkcija, ako hocu da sve funkcionise sa menjanjem kategorije i naziva proizvoda, ovo mi ne treba
-            // i treba da fukncionise tako sto uzme sve prikazane rezultata i contains ono sto smo zadali
             IWebElement searchTextBox = browser.FindElement(By.Id("twotabsearchtextbox"));
             string searchText = "Fire TV";
             searchTextBox.SendKeys(searchText);
